@@ -1,0 +1,46 @@
+.people_container {
+  position: relative;
+  margin-bottom: 2rem;
+
+  .label_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
+  .people {
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--neutral-c5);
+    color: var(--neutral-c1);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: end;
+    margin-top: .5rem;
+    padding: .5rem 1rem;
+    width: 100%;
+    outline: none;
+
+    @media (min-width: 375px) {
+      margin: 0;
+    }
+  }
+  .people:focus {
+    border: 2px solid var(--primary-c1);
+  }
+  .people:hover {
+    border: 2px solid var(--primary-c1);
+    cursor: pointer;
+  }
+}
+.people_container::before {
+  content: "";
+  background-image: url("../../image/icon-person.svg");
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 18px;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+} 

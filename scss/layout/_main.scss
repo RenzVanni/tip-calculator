@@ -1,0 +1,22 @@
+main {
+  position: relative;
+  border-radius: 2rem 2rem 0 0;
+  background-color: var(--neutral-c6);
+  padding: 2rem;
+
+  @media (min-width: 375px) {
+    max-width: 60%;
+    margin: 0 auto;
+    border-radius: 2rem;
+
+    form {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      section {
+        width: 100%;
+      }
+    }
+  }
+}

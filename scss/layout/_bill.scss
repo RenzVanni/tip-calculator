@@ -1,0 +1,42 @@
+.bill_container {
+  position: relative;
+  margin-bottom: 2rem;
+
+  .label_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  .bill {
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--neutral-c5);
+    color: var(--neutral-c1);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: end;
+    margin-top: .5rem;
+    padding: .5rem 1rem;
+    width: 100%;
+    outline: none;
+  }
+  .bill:focus {
+    border: 2px solid var(--primary-c1);
+  }
+  .bill:hover {
+    border: 2px solid var(--primary-c1);
+    cursor: pointer;
+  }
+}
+.bill_container::before {
+  content: "";
+  background-image: url("../../image/icon-dollar.svg");
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 18px;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+} 

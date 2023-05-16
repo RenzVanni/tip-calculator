@@ -1,0 +1,41 @@
+.selectTip_container {
+  margin-bottom: 2rem;
+
+  .selectTip_options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+    
+    @media (min-width: 375px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    input {
+      width: 100%;
+      background-color: var(--neutral-c1);
+      border: none;
+      border-radius: .3rem;
+      color: var(--neutral-c6);
+      padding: .7rem;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    input:hover {
+      cursor: pointer;
+    }
+    input[type="button"]:hover, input[type="button"]:focus {
+      background-color: var(--primary-c1);
+    }   
+    input[type="text"]:hover, input[type="text"]:focus {
+      border: 2px solid var(--primary-c1);
+    }
+
+    input[type="text"] {
+      background-color: var(--neutral-c5);
+      color: var(--neutral-c1);
+      text-align: end;
+      outline: none;
+    }
+  }
+}
